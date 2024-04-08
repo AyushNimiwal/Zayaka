@@ -1,0 +1,5 @@
+.ht{
+    color: transparent;
+    user-select: none;
+    -webkit-text-stroke: 2px orange;
+}

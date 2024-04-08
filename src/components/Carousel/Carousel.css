@@ -1,0 +1,89 @@
+
+.text1{
+    font-weight: 700;
+    color: #ffffff00;
+    -webkit-text-stroke: 3px orange;
+}
+.content::-webkit-scrollbar{
+    display: none;
+}
+@media screen and (max-width:480px) {
+    .ccard,.ccard-img,.ccard-c{
+        width:15rem;
+        height: 20rem;
+    }
+    .ccard{
+        margin-left: 2.8rem;
+        margin-right: 2.8rem;
+    }
+    .text1{
+        font-size: 5rem;
+        
+    }
+}
+@media screen and (min-width:480px) {
+    .text1{
+        font-size: 7rem;
+    }
+    .ccard,.ccard-img,.ccard-c{
+        width:18rem;
+        height: 24rem; 
+    }
+    .ccard{
+        margin-left: 1.6rem;
+        margin-right: 1.6rem;
+    }
+    .ccard:hover .ccard-b{
+        transform: translateY(0);
+        transition: transform 0.5s;
+    }
+    .ccard:hover .ccard-img{
+        transform: scale(1.1);
+        transition: transform 0.5s;
+    }
+    .c-title{
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+    }
+    .c-desc{
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+}
+@media screen and (max-width:1024px) {
+    .hide{
+        display: none;
+    }
+   
+}
+@media screen and (min-width:1024px) {
+    .hide{
+        display: block;
+    }
+   
+}
+@media screen and (min-width:1350px) {
+    .ccard,.ccard-img,.ccard-c{
+        width:25rem;
+        height: 30rem;
+    }
+    .ccard{
+        margin-left: 1.8rem;
+        margin-right: 1.8rem;
+    }
+    .text1{
+        font-size: 7rem;
+    }
+    .c-title-active{
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+    .c-title{
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+    }
+    .c-desc{
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+}

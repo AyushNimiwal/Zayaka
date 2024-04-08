@@ -1,0 +1,89 @@
+.htext{
+    -webkit-text-stroke: 0.4px orange;
+}
+.text-1{
+    font-weight: 700;
+    color: #ffffff00;
+    text-align: center;
+    -webkit-text-stroke: 3px orange;
+}
+
+.box:hover .clip-t{
+    border-bottom: 1.3px solid orange;
+    transform: translateY(-97%);
+    transition: all 1s;
+}
+.box:hover .btn{
+    background-color: rgb(256,146,60);
+    color: white;
+    transition: ease-in-out 0.5s;
+}
+.box:hover .clip-b{
+    border-top: 1.3px solid orange;
+    transform: translateY(97%);
+    transition: all 1s;
+}
+.h-text{
+    font-weight: 700;
+    color: #ffffff00;
+    -webkit-text-stroke: 0.8px orange;
+}
+.h-text2{
+    font-weight: 700;
+    color: #ffffff00;
+    -webkit-text-stroke: 1.8px orange;
+}
+.cursor{
+    transition:background-image ease 0.5s;
+    background-position: center;
+    background-size: cover;
+    mix-blend-mode: darken;
+}
+.contain::-webkit-scrollbar{
+    display: none;
+}
+@media screen and (max-width:480px) {
+    .trends,.rpod{
+        font-size: 3rem;
+    }
+    .daily{
+        right: 4rem;
+        top:5rem;
+    }
+    .meal{
+        left: 4rem;
+        top:5rem;
+    }
+}
+@media screen and (min-width:480px) {
+    .trends,.rpod{
+        font-size: 5rem;
+    }
+    .daily{
+        left:7rem;
+        top:10rem;
+    }
+    .meal{
+        right: 9rem;
+        top:4rem;
+    }
+}
+@media screen and (min-width:768px) {
+    .trends,.rpod{
+        font-size: 6rem;
+        line-height: 7rem;
+    }
+}
+@media screen and (min-width:1024px) {
+    .trends,.rpod{
+        font-size: 7rem;
+    }
+}
+@media screen and (min-width:1024px) {
+   
+}
+@media screen and (min-width:1200px) {
+    .trends,.rpod{
+        font-size: 8rem;
+    }
+}
