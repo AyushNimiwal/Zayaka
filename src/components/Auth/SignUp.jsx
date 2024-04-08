@@ -44,6 +44,7 @@ function SignUp() {
     setConfirmPassword("");
     setImage("");
     navigate("/", { replace: true });
+    window.location.reload();
   };
   return (
     <div className="w-screen h-screen bg-black/20 z-50 fixed">
