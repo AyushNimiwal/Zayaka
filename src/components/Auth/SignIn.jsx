@@ -17,7 +17,6 @@ function SignIn() {
         setEmail('');
         setPassword('');
         navigate("/", { replace: true });
-        window.location.reload();
     }
     const handleClose = () => {
         navigate("/", { replace: true });
