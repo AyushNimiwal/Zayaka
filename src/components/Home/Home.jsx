@@ -144,9 +144,9 @@ const home = () => {
           <div className='w-[100vw] h-[100vh] absolute'>
             
             <div className='w-full h-full relative'>
-              {/* <div className=' absolute spline'>
+              <div className=' absolute spline'>
                 <Spline scene="https://prod.spline.design/wnIPOF26uDtnJUBC/scene.splinecode" />
-              </div>   */}
+              </div>  
               <span className=' p-2 overflow-hidden absolute  pl-5 t2'>Let<span className=' text-orange-400'>'</span>s <br></br><span className=' text-orange-400 t2'>Share</span> Your <br></br>Recipes</span>
             </div>
           </div>
@@ -192,7 +192,7 @@ const home = () => {
           <div className='w-[95%] h-fit md:py-2 md:mt-28 overflow-x-scroll contain'>
             <div className='w-fit h-fit flex items-center c-item'>
               {
-                allData.filter((post) => post.category.includes(item.toLowerCase())).map((post, index) => (
+                allData.filter((post) => post.category.includes(item)).map((post, index) => (
                   <Card key={index} post={post}/>
                 ))
               }

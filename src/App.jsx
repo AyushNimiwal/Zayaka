@@ -9,6 +9,7 @@ import { useDispatch } from 'react-redux';
 import authService  from './components/appwrite/Auth';
 import {login,logout} from './store/authSlice';
 gsap.registerPlugin(ScrollTrigger);
+
 function App() {
   const [loading, setLoading] = useState(true);
   const dispatch = useDispatch();
