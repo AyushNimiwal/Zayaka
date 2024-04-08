@@ -6,14 +6,11 @@ import authService from "../appwrite/Auth";
 
 function SignUp() {
   const navigate = useNavigate();
-  const [pimage, setPimage] = useState(null);
-  const [role, setRole] = useState("");
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [error, setError] = useState("");
   const [password, setPassword] = useState("");
   const [confirmpassword, setConfirmPassword] = useState("");
-  const [image, setImage] = useState("");
   const tl = gsap.timeline({ defaults: { ease: "power2.inOut" } });
   useEffect(() => {
     tl.from(".signup-div", { y: "-80%" }, "signup").to(
@@ -75,57 +72,6 @@ function SignUp() {
           </div>
           <div className="flex justify-center items-center text-red-600">{error}</div>
           <form className="mt-3">
-            <div className="flex sm:flex-row flex-col sm:gap-6">
-              <div className="sm:w-96 w-70">
-                <div className="mb-1 flex justify-center items-center ">
-                  <div
-                    onClick={() => document.querySelector(".i-field").click()}
-                    className="sm:w-72 sm:h-72 w-56 h-56 rounded-full border-2 border-dashed flex justify-center items-center object-fill overflow-clip cursor-pointer"
-                  >
-                    <input
-                      type="file"
-                      id="image"
-                      name="image"
-                      accept="image/*"
-                      className="i-field hidden"
-                      onChange={({ target: { files } }) => {
-                        if (files) setPimage(URL.createObjectURL(files[0]));
-                      }}
-                    />
-                    {pimage ? (
-                      <img
-                        src={pimage}
-                        alt="profile"
-                        className="w-72 h-72 rounded-full"
-                      />
-                    ) : (
-                      <img
-                        src={chef}
-                        alt="profile"
-                        className="w-72 h-72 rounded-full"
-                      />
-                    )}
-                  </div>
-                </div>
-                <div className="mb-3">
-                  <label
-                    for="role"
-                    className="block mb-2 text-sm font-medium text-gray-600"
-                  >
-                    Role
-                  </label>
-                  <input
-                    type="role"
-                    id="role"
-                    name="role"
-                    value={role}
-                    required
-                    onChange={(e) => setRole(e.target.value)}
-                    placeholder="Ex:Professional Chef, Home Cook, etc."
-                    className="w-full p-4 border rounded-lg"
-                  />
-                </div>
-              </div>
               <div className="w-96">
                 <div className="mb-3">
                   <label
@@ -198,7 +144,6 @@ function SignUp() {
                   />
                 </div>
               </div>
-            </div>
             <div className="w-full flex justify-center">
               <button
                 onClick={handleSubmit}
