@@ -187,7 +187,7 @@ const home = () => {
       </div>
       <Expert/>
       {
-        category.map((item,index)=>(
+        category&&category.map((item,index)=>(
         <div key={index} className='w-[100vw] h-[70vh] flex flex-col items-center relative d1 overflow-hidden'>
           <div className='w-[95%] h-fit md:py-2 md:mt-28 overflow-x-scroll contain'>
             <div className='w-fit h-fit flex items-center c-item'>
