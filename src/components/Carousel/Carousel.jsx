@@ -81,7 +81,7 @@ const Carousel = () => {
   }, []);
   return (
     <div className="w-[100vw] h-fit my-5 -ml-2 flex justify-center items-center relative carousel overflow-hidden">
-      {data.map((post, index) => (
+      {data&&data.map((post, index) => (
         <div key={index} className="flex flex-col">
           <div
             className={`ccard  rounded-2xl my-6 relative overflow-hidden transition-all duration-200 ${
